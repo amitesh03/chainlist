@@ -37,3 +37,7 @@ export default async function handler(req, res) {
     return res.status(200).json(chain);
   }
 }
+
+export const config = { 
+  runtime: 'edge' // Enables Edge Runtime for Cloudflare [[10]]
+};
